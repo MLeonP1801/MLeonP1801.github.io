@@ -7,15 +7,187 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Mauricio León</h1>
-        <p>Ingeniero Mecatrónico | Automovilismo | Robótica</p>
+    <!-- Header / Navegación -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <h2>Mauricio León</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <!-- AGREGAR ESTE BOTÓN -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                🌙
+            </button>
+        </nav>
     </header>
-    <main>
-        <section>
-            <h2>¡Portafolio en Desarrollo!</h2>
-            <p>Próximamente: Mis proyectos de ingeniería mecatrónica</p>
-        </section>
-    </main>
+
+    <!-- Sección Hero / Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Mauricio León</h1>
+            <h2>Ingeniero Mecatrónico</h2>
+            <p>Apasionado por el automovilismo, la robótica y la innovación tecnológica</p>
+            <a href="#proyectos" class="btn">Ver Mis Proyectos</a>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <p>
+                    Soy estudiante de últimos ciclos de Ingeniería Mecatrónica con una fuerte pasión 
+                    por la intersección entre la mecánica, la electrónica y la programación. Mi interés 
+                    se centra en el automovilismo de competición, la robótica autónoma y el desarrollo 
+                    de sistemas mecatrónicos innovadores.
+                </p>
+                <p>
+                    Busco constantemente desafíos que me permitan aplicar mis conocimientos en 
+                    proyectos reales, desde el diseño CAD hasta la implementación de sistemas 
+                    de control embebidos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/proyecto1.jpg" alt="Proyecto 1" onerror="this.style.display='none'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Nombre del Proyecto 1</h3>
+                        <p>Descripción breve del proyecto y sus objetivos principales.</p>
+                        <div class="project-tech">
+                            <span>C++</span>
+                            <span>SolidWorks</span>
+                            <span>ROS</span>
+                        </div>
+                        <a href="https://github.com/tu-usuario/proyecto1" class="project-link" target="_blank">
+                            Ver en GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/proyecto2.jpg" alt="Proyecto 2" onerror="this.style.display='none'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Nombre del Proyecto 2</h3>
+                        <p>Descripción breve del proyecto y sus objetivos principales.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Arduino</span>
+                            <span>CAD</span>
+                        </div>
+                        <a href="https://github.com/tu-usuario/proyecto2" class="project-link" target="_blank">
+                            Ver en GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/proyecto3.jpg" alt="Proyecto 3" onerror="this.style.display='none'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Nombre del Proyecto 3</h3>
+                        <p>Descripción breve del proyecto y sus objetivos principales.</p>
+                        <div class="project-tech">
+                            <span>MATLAB</span>
+                            <span>Simulink</span>
+                            <span>Control Systems</span>
+                        </div>
+                        <a href="https://github.com/tu-usuario/proyecto3" class="project-link" target="_blank">
+                            Ver en GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programación</h3>
+                    <div class="skill-items">
+                        <span>C++</span>
+                        <span>Python</span>
+                        <span>MATLAB</span>
+                        <span>ROS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Diseño CAD</h3>
+                    <div class="skill-items">
+                        <span>SolidWorks</span>
+                        <span>AutoCAD</span>
+                        <span>Fusion 360</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Prototipado</h3>
+                    <div class="skill-items">
+                        <span>Arduino</span>
+                        <span>Raspberry Pi</span>
+                        <span>Impresión 3D</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>¡Hablemos!</h3>
+                    <p>¿Tienes un proyecto en mente? Me encantaría conversar contigo.</p>
+                    <div class="contact-links">
+                        <a href="mailto:tu-email@ejemplo.com">📧 tu-email@ejemplo.com</a>
+                        <a href="https://linkedin.com/in/tu-perfil" target="_blank">💼 LinkedIn</a>
+                        <a href="https://github.com/tu-usuario" target="_blank">🐙 GitHub</a>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <input type="text" name="name" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu email" required>
+                    <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mauricio León. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
+
